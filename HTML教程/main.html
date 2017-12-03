@@ -1,0 +1,231 @@
+
+<!DOCTYPE html>
+<!--此标签告诉浏览器用哪个html版本编写-->
+
+<html>
+<head>
+<!--head包括title,meta,link,base,script,style-->
+
+<!----------------------------------------------------------------------------------------------------------->
+
+<title>my review</title>
+<!--title是标题-->
+
+<!----------------------------------------------------------------------------------------------------------->
+
+
+<!--meta描述非html标准的一些文档信息-->
+
+<!--name相当于给网页打上标签,这些信息是不可见的,只提供给那些搜索引擎-->
+
+<meta name="keywords" content="review,html,joker">
+<meta name="description" content="网页制作">
+
+<!--http-equiv可以按照content的内容控制网页-->
+
+<!--pragma为no-cache的设定禁止浏览器从缓存中访问页面内容-->
+<meta http-equiv="pragma" content="no-cache">
+
+<!--content-type控制页面语言的类型-->
+<meta http-equiv="content-type" content="text/html"; charset="UTF-8">
+
+<!--refresh可以让界面X秒后刷新到URL所指界面-->
+<meta http-equiv="refresh" content="50 URL= /resource/han.html" >
+
+<!----------------------------------------------------------------------------------------------------------->
+
+<!--link用来指定当前文档和其他文档之间的联接关系-->
+<!--rel说明两个文档之间的关系；href说明目标文档名-->
+<link rel="stylesheet" href="style.css">
+
+
+<!----------------------------------------------------------------------------------------------------------->
+
+<!--base用于定义文档提交是默认的外部资源-->
+
+<!----------------------------------------------------------------------------------------------------------->
+
+<!--script在页面中加入脚本程序-->
+<script> 
+	function fun1(){
+		alert("why so serious ?");
+	}
+	function fun2(){
+		alert("would you like to know which of them were cowards ?");
+	}
+	function fun3(){
+		alert("good night !");
+	}
+	
+
+</script>
+
+<!----------------------------------------------------------------------------------------------------------->
+
+
+</head>
+
+<body bgcolor=#C0C0C0>
+<h1>写给技术小白的HTML初级教程</h1>
+
+<div>
+	<p>
+	<big>教程使用的tip:</big>
+		<ul type="disc">
+			<li>使用教程时,在浏览器按F12,即可看到该网页的源代码</li>
+			<li>请尽量在看教程的同时自己练习写代码,加深记忆</li>
+			<li>对照网页元素及源代码中的注释,可以更容易的理解每个元素的作用</li>
+			<li>我在网页中使用了refresh,50秒后网页会自动刷新,页面有对应按钮,单击即可返回到该页面</li>
+		</ul>
+	
+	</p>
+</div>
+<hr/>
+<div>
+<a href="resource/base.html" >先来看一下基础知识吧 </a>
+<br/>
+<a href="resource/list.html">填个表吗?</a>
+<br/>
+<a href="#joker">想看joker吗?</a>   <!--#可以通过元素的属性name查找到某个元素-->
+</div>
+<hr/>
+<div>
+<p>标签h为标题</p>
+
+<h1>我是标签&lt;h1&gt;,代表标题,从h1到h6不同数字代表不同标题等级</h1>
+<h2>可以用&lt;hr/&gt;标签定义水平线,如下:</h2>
+<hr/>
+<p>使用属性width定义长度,绝对值:</p>
+<hr/ width="500">
+<p>相对值(全屏或半屏可以看到区别)</p>
+<hr/ width="50%">
+
+<h3>body的属性bgcolor可以改变页面的颜色</h3>
+<h4 align="right">This is heading 4,右对齐</h4>
+<h5 align="left">This is heading 5,左对齐</h5>
+<h6 align="center">This is heading 6,居中</h6>
+
+<p>请仅仅把标题标签用于标题文本。不要仅仅为了产生粗体文本而使用它们。请使用其它标签或 CSS 代替。</p>
+
+<!----------------------------------------------------------------------------------------------------------->
+
+<hr/>
+<br/>
+<p>一个闭合的标签p代表段落</p>
+
+<p>浏览 器  会   忽略     在html中        
+的排版(多个空格变了一个,回车换行被忽略)</p>
+
+<p>回车</br>换行为&lt;/br&gt;(line break)</p>
+
+<pre>如果你想自定义格式,就使用    &lt;pre&gt;    这个
+      " <font color="red">预格式标签</font> "</pre>
+<br/>
+	  
+<!----------------------------------------------------------------------------------------------------------->
+
+
+<p>文本格式化:<br/><b>b是加粗<b><strong>strong,在默认的 HTML 样式表定义中，b 和 strong 的样式一样，为 { font-weight: bolder }；</strong>
+<br/>
+<br/><hr/><br/>
+<big>这是big</big>
+<sub>sub是下标(subscript)</sub>
+<sup>sup是上标(superscript)</sup>
+<small>这是small</small>
+<br/>
+<hr/>
+<br/>
+
+<em>em是斜体(emphasized) <em> em 的默认样式</em>
+<i>为 { font-style: italic }</i> 
+<italic> 与 i 相同.</italic>
+<br/>
+
+<address>&lt;address&gt;用来显示地址.是文本格式化的一种<br/>
+<a href="mailto:gaarahan@qq.com?subject=Hello%20Word"><abbr title="点我,我带你给gaarahan发邮件说hello world">mail to gaarahan and subject "Hello%20world"</abbr>
+</a>
+</address>
+
+<bdo dir="rtl">
+&lt;bdo&gt;了用使.的写着反是字文段这实其
+</bdo>
+
+</p>
+
+<!----------------------------------------------------------------------------------------------------------->
+<hr/>
+
+<h2>frameset是框架,cols为竖直,rows为水平,这儿是一个嵌套:</h2>
+<a href="frame/frame.html">Click Me</a>
+<br/>
+
+
+<!----------------------------------------------------------------------------------------------------------->
+<hr/>
+<h3>table是表格,th是表头,tr是行,td是数据,caption:标题
+
+<br/>
+<table border="1">
+<caption>My review about table</caption>
+<tr>
+	<th>head</th>
+	<th>C1</th>
+	<th>C2</th>
+	<th colspan="2">我占两列</th>
+</tr>
+
+<tr>
+	<th rowspan="2">我占两行</th>
+	<td>这个单元包含一个无序标志为disc列表：
+		<ul type="disc">
+			<li>苹果</li>
+			<li>香蕉</li>
+			<li>菠萝</li>
+		</ul>
+	</td>
+	<td>这个单元包含一个有序标志为小写字母的列表：
+		<ol type="a">
+			<li>苹果</li>
+			<li>香蕉</li>
+			<li>菠萝</li>
+		</ol>
+	</td>
+</tr>
+
+<tr>
+	<th>R2</th>
+	<td>这个单元包含一个从20开始的有序标志为罗马数字列表：
+		<ol start="20" type="I">
+			<li>苹果</li>
+			<li>香蕉</li>
+			<li>菠萝</li>
+		</ol>
+	</td>
+	<td>&nbsp;</td>
+</tr>
+</table>
+<br/>
+
+<!----------------------------------------------------------------------------------------------------------->
+
+<br/>
+<a name="joker" href="https://www.baidu.com/s?ie=utf-8&f=8&rsv_bp=0&rsv_idx=1&tn=baidu&wd=%E5%B8%8C%E6%96%AF%E8%8E%B1%E6%9D%B0%20joker&rsv_pq=e2def55500023d1a&rsv_t=0592l1pZ0WG4X2XxCn8AWZg1Wzr8eiwEDtklqnOAtNRHy30ZJ4oJGxyDsIs&rqlang=cn&rsv_enter=1&rsv_sug3=2&rsv_n=2">
+why so serious !!!(你点我,我带你百度joker)
+</a>
+<a href ="www.baidu.com">
+<img  src="joker.jpg" ismap width="100%" height="100%" usemap="#jokermap"/>
+</a>
+
+<p>这张joker的图片使用了&lt;map&gt;,点击不同的位置会有不同的弹窗(几个简单的js函数)(三处不同反馈: 头,身体,其他地方)</p>
+<map name="jokermap" >
+	<area shape="rect" coords="600,245,670,140"  onclick="fun1()"  alt="why so serious ?"/>
+	<area shape="rect" coords="500,600,730,250"  onclick="fun2()"  alt="coward"/>
+	<area shape="default"  onclick="fun3()"  alt="good night"/>
+</map>
+</a>
+
+<!----------------------------------------------------------------------------------------------------------->
+
+
+</body>
+</html>

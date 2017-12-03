@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My list</title>
+<meta http-equiv="txt/html" charset="UTF-8">
+</head>
+<body>
+
+<form>
+	<fieldset>
+		<legend>个人信息</legend>
+		userName:
+			<input type="text" name="userName"/>
+		<br/>
+		<br/>
+		password :
+			<input type="password" name="password"/>
+		<hr/>
+		<br/>
+
+		性别:
+		<br/>
+		<pre>男:  <input type="radio" checked="checked" name="sex" value="male"/>    女: <input type="radio" name="sex" value="female"/></pre>
+	</fieldset>
+	
+	随便选几个喜欢的颜色吧:
+	<br/>
+		red<input type="checkbox" name="red"/>
+		yellow<input type="checkbox" name="yellow"/>
+		blue<input type="checkbox" name="blue"/>
+		green<input type="checkbox" name="green"/>
+	<br/>
+	<br/>
+	你只能选1,2,3,4:
+	<br/>
+		<select name="color">
+			<option value="red" selected="selected">Red</option>
+			<option value="yellow">Yellow</option>
+			<option value="blue">Blue</option>
+			<option value="green">Green</option>
+		
+		</select>
+	
+	<br/>
+	<br/>
+	<textarea cols="100" rows="5">
+		这是一个文本域,想写点什么吗?
+	</textarea>
+
+	<br/>
+	<br/>
+	<hr/>
+	这有个写着提交的按钮,按它可以提交表单(如果写了后台的话,现在还不能使用)
+	<br/>
+	<input  type="button" value="  提交  "/>
+</form>
+
+<a href="../main.html">返回主页面</a>
+</body>
+
+</html>
